@@ -32,12 +32,15 @@ body {
 }
 .home {
   color: rgb(254, 163, 1);
+  font-weight: 700;
 }
 .link {
   color: rgb(1, 172, 253);
+  font-weight: 700;
 }
 .admission {
   color: rgb(93, 88, 239);
+  font-weight: 700;
 }
 .facilities {
   color: rgb(5, 212, 223);
@@ -67,13 +70,111 @@ body {
   font-size: 1.2rem;
   font-weight: 400;
 }
-.hero-btn{
-    color: white;
-    padding: 10px;
-    font-weight: 500;
-    background:linear-gradient( rgb(1, 172, 253), rgb(254, 163, 1),  rgb(93, 88, 239),  rgb(93, 88, 239));
-    border: none;
-    border-radius: 5px;
+.hero-img img {
+  max-width: 90%;
+}
+.hero-btn {
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+  background: linear-gradient(
+    rgb(1, 172, 253),
+    rgb(254, 163, 1),
+    rgb(93, 88, 239),
+    rgb(93, 88, 239)
+  );
+  border: none;
+  border-radius: 5px;
+}
+
+/* standerd section */
+.standard-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.standard-container {
+  background-image: url(../assets/bg.png);
+  margin-top: 80px;
+  max-width: 1200px;
+  height: 600px;
+}
+.card-section {
+  gap: 30px;
+}
+.card {
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 0.94px solid rgb(222, 245, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(222, 245, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+.card-two {
+  text-align: center;
+  padding: 20px;
+  border: 0.94px solid rgb(255, 244, 220);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(255, 244, 220),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+.card-three {
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 0.94px solid rgb(242, 232, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+.standard-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.standard-description {
+  color: rgb(128, 128, 128);
+}
+/* arrow icon section */
+.arrow-icon{
+    text-align: center;
+    color: orange;
+    margin-bottom: 60px;
+}
+ 
+.arrow-icon img{
+    width: 70px;
+}
+/* stories section */
+.our-section{
+    background-image: url(../assets/bg.png), linear-gradient(45.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+.stories-container {
+  display: grid;
+}
+.stories-card {
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  width: 400px;
+  height: 450px;
+}
+.stories-card img {
+  width: 80%;
 }
 /* responsive section */
 @media screen and (max-width: 576px) {
@@ -92,15 +193,24 @@ body {
   .header {
     border-bottom: 0.5px solid rgb(254, 163, 1);
   }
-  .hero-container{
+  .hero-container {
+    margin: 0;
+    padding: 0;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
-  .hero-img{
+  .hero-img {
     max-width: 100%;
+    text-align: center;
   }
-  .hero-section{
-   text-align: center;
+  .hero-section {
+    text-align: center;
   }
+  .card-section {
+    flex-direction: column;
+  }
+  .arrow-icon{
+    display: none;
+}
 }
