@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids-School-website</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header>
 
+<body>
+    <header class="header flex">
+        <div class="flex logo">
+            <img class="logo" src="assets/logo.png" alt="">
+            <h2 class="title">SCHOOL</h2>
+        </div>
+        <nav class="flex nav-bar">
+            <ul class="nav-links flex">
+                <li class="home">Home</li>
+                <li class="link">About</li>
+                <li class="facilities">Facilities</li>
+                <li class="admission">Admission</li>
+            </ul>
+        </nav>
+        <div>
+            <button class="btn-primary">contact</button>
+        </div>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
     </header>
     <main>
-
+        <section>
+            <div class="flex  hero-container">
+                <div class="hero-section">
+                    <h2 class="hero-title"><span class="home">Empowering</span>
+                        students from small age <span class="link">towards vision</span></h2>
+                    <p class="hero-description">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</p>
+                    <button class="hero-btn">Enroll Now <i class="fa-solid fa-arrow-down fa-rotate-270"></i></button>
+                </div>
+                <div class="hero-img">
+                    <img src="assets/hero-kids.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>

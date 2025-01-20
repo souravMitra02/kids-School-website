@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* shared styles */
+.flex {
+  display: flex;
+}
+/* header section */
+.header {
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-icon {
+  display: none;
+}
+.nav-bar {
+  justify-content: center;
+  align-items: center;
+}
+.nav-links {
+  gap: 30px;
+  align-items: center;
+  margin-right: 80px;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.home {
+  color: rgb(254, 163, 1);
+}
+.link {
+  color: rgb(1, 172, 253);
+}
+.admission {
+  color: rgb(93, 88, 239);
+}
+.facilities {
+  color: rgb(5, 212, 223);
+}
+.btn-primary {
+  border-radius: 8px;
+  padding: 10px 30px;
+  color: white;
+  border: none;
+  background-color: orange;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* hero section */
+.hero-container {
+  justify-content: space-between;
+}
+.hero-section {
+  max-width: 500px;
+  margin-top: 80px;
+}
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.hero-btn{
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    background:linear-gradient( rgb(1, 172, 253), rgb(254, 163, 1),  rgb(93, 88, 239),  rgb(93, 88, 239));
+    border: none;
+    border-radius: 5px;
+}
+/* responsive section */
+@media screen and (max-width: 576px) {
+  .nav-bar,
+  .btn-primary,
+  .title {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    font-size: 1.3rem;
+  }
+  .logo {
+    margin-bottom: 5px;
+  }
+  .header {
+    border-bottom: 0.5px solid rgb(254, 163, 1);
+  }
+  .hero-container{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-img{
+    max-width: 100%;
+  }
+  .hero-section{
+   text-align: center;
+  }
+}
